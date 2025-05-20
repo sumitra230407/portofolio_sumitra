@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
   }
   
+  html, body {
+    max-width: 100%;
+  }
+  
 
 *{
     padding: 0;
@@ -144,6 +148,9 @@ html {
     animation: bounch 2s infinite ease-in-out;
     cursor: pointer;
 }
+.home .picture img{
+    width: 37vw;
+}
 @keyframes bounch{
     0% {
         transform: translateY(0);
@@ -155,8 +162,8 @@ html {
         transform: translateY(0);
     }
 }
-.picture img{
-    width: 36vw;
+.about .picture img{
+    width: 42vw;
 }
 .social-media {
     display: flex;
@@ -214,13 +221,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14vh 11vw 14vh;
+    padding: 14vh 11vw 14vh 7.5vw;
     background-color: #1C1C1C;
+    gap: 50px;
   }
 
-  .about img{
-    width: 600px;
-  }
   .about-desc{
     display: flex;
     flex-direction: column;
@@ -310,6 +315,26 @@ html {
     flex-direction: column;
     gap: 1vh;
     color: white;
+}
+
+.cv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14vh 11vw 14vh;
+    background-color: #1C1C1C;
+  }
+
+  .cv .picture img{
+    width: 32vw;
+}
+
+.cv-desc{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    color: white;
+    gap: 10px;
 }
 
 @media (max-width: 600px) {
